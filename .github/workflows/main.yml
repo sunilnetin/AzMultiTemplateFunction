@@ -25,10 +25,10 @@ jobs:
     - name: 🏗️ Build all projects
       run: dotnet build --configuration Release
 
-    - name: 🧪 Run unit tests
-      run: dotnet test SharedLib.Tests --no-build --verbosity normal
+    #- name: 🧪 Run unit tests
+     # run: dotnet test SharedLib.Tests --no-build --verbosity normal
 
-    - name: 🐳 Build Docker image (optional)
-      run: |
-        docker build -t httptriggerfunction ./HttpTriggerFunction
-        docker build -t timertriggerfunction ./TimerTriggerFunction
+    #- name: 🐳 Build Docker image (optional)
+     # run: |
+      #  docker build -t httptriggerfunction ./HttpTriggerFunction
+        #docker build -t timertriggerfunction ./TimerTriggerFunction

@@ -144,3 +144,27 @@ Use the CLI to generate a solid .gitignore:
 ```bash
 dotnet new gitignore
 ```
+---
+## 📚 **CI/CD Deployment using GitHub -> Action having 2 Approach**
+✍️ Option 1: Create It Manually in VS Code
+This is the most flexible and developer-friendly way.
+✅ Steps:
+    1. In your project root, create the folders:
+mkdir -p .github/workflows
+    2. Inside .github/workflows, create a new file:
+touch ci.yml
+    3. Open ci.yml in VS Code and paste your CI workflow (like the one I shared earlier).
+    4. Save and commit:
+git add .github/workflows/ci.yml
+git commit -m "Add CI workflow for Azure Functions"
+git push origin main
+
+⚙️ Option 2: Use GitHub → Actions → Set Up Workflow
+If you prefer a guided setup:
+    1. Go to your GitHub repo in the browser.
+    2. Click the Actions tab.
+    3. GitHub will suggest some starter workflows. You can:
+        ○ Choose "set up a workflow yourself"
+        ○ Or select a template like .NET Core, then customize it
+    4. GitHub will create a .github/workflows/main.yml file for you.
+    5. Edit it directly in the browser or pull it locally to rename and modify.
